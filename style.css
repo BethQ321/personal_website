@@ -15,7 +15,7 @@ span {
 header {
     background-color: #CEDADE;
     color: #0D0D0D;
-    padding: 5px;
+    padding: 8px;
 }
 
 h1 {
@@ -24,13 +24,36 @@ h1 {
 }
 
 h2 {
+    font-size: 35px;
+    padding-left: 40px;
+}
+
+h3 {
+    font-size: 23px;
     margin: 0px;
+    padding: 0px;
 }
 
 .headshot {
     float: left;
     width: 300px;
     margin: 40px;
+    border-radius: 20px;
+}
+
+.aboutPhotos {
+    float: right;
+    width: 300px;
+    margin: 40px;
+    border-radius: 20px;
+}
+
+div {
+    background-color: #CEDADE;
+    color: #2C241E;
+    border: 5px solid #827063;
+    width: 80%;
+    margin-left: 100px;
     border-radius: 20px;
 }
 
@@ -42,11 +65,22 @@ main {
 
 p {
     font-size: 25px;
-    padding: 40px 40px 0px 40px;
+    margin: 25px;
+    padding-left: 15px;
+}
+
+hr {
+    border: 5px solid #827063;
+    min-width: 100vw;
+    margin: 5px 0px -10px -10px;
 }
 
 ul, a {
     font-size: 25px;
+}
+
+ul {
+    margin-left: 400px;
 }
 
 #mission {
