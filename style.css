@@ -1,7 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content:center;
 }
 
 .center {
@@ -10,12 +20,24 @@ body {
 
 span {
     padding: 4px;
+    margin: auto;
 }
 
 header {
     background-color: #CEDADE;
     color: #0D0D0D;
     padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    background-color: #f0f6f8;
+    border: 2px #0C4248 solid;
+    padding: 3px 6px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px -2px #0D0D0D;
 }
 
 h1 {
@@ -45,16 +67,22 @@ h3 {
     float: right;
     width: 300px;
     margin: 40px;
+    margin-top: -20px;
     border-radius: 20px;
+    text-align: right;
 }
 
-div {
+.boxes {
     background-color: #CEDADE;
     color: #2C241E;
     border: 5px solid #827063;
     width: 80%;
     margin-left: 100px;
     border-radius: 20px;
+}
+
+.padding {
+    padding: 20px;
 }
 
 main {
@@ -88,7 +116,48 @@ ul {
     font-style:italic;
 }
 
+form {
+    font-size: 20px;
+    max-width: 660px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+#return {
+    display: flex;
+    justify-content: center;
+}
+
 a:link    { color: #0C4248; }
-a:visited { color: #827063; }
-a:hover   { color: #0D0D0D; }
+a:visited { color: #0D0D0D; }
+a:hover   { background-color: #827063; }
 a:active  { color: #CEDADE; }
+
+@media screen and (max-width: 480px) {
+    
+    main {
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+    ul {
+        margin-left: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .boxes {
+        width: 95%;
+        margin: 10px 50px 10px 10px;
+    }
+}
